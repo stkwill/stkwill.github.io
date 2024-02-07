@@ -28,7 +28,7 @@
 <meta property="og:description" content="题面链接： AtCoder 洛谷 Virtual Judge 导航 - 题解 简要题意 有一个长度为  的排列，现在你做了几次操作，陈述如下： 找出所有的  ，满足：对于任意  将这些  移至序列末尾。没有移动的数之间的顺序不变，移动的数之间的顺序也不变 可以证明，在有限次操作后，序列一定会变成  ，你想知道最小的操作次数 思路 注意到  不会改变其他数是否为 up&#x2F;lo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-07T09:29:21.000Z">
-<meta property="article:modified_time" content="2024-02-07T10:41:04.666Z">
+<meta property="article:modified_time" content="2024-02-07T14:29:11.624Z">
 <meta property="article:author" content="stkwill">
 <meta property="article:tag" content="solution">
 <meta property="article:tag" content="AtCoder">
@@ -330,7 +330,7 @@ mjx-container[display="true"] + br {
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-02-07 17:29:21 / 修改时间：18:41:04" itemprop="dateCreated datePublished" datetime="2024-02-07T17:29:21+08:00">2024-02-07</time>
+              <time title="创建时间：2024-02-07 17:29:21 / 修改时间：22:29:11" itemprop="dateCreated datePublished" datetime="2024-02-07T17:29:21+08:00">2024-02-07</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -467,6 +467,8 @@ up/low</p>
 </ul>
 <p>时间复杂度： <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.844ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2141 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1752,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span></p>
 <h2 id="代码">代码</h2>
+<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc014/submissions/50077200" class="uri">https://atcoder.jp/contests/agc014/submissions/50077200</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/146467107" class="uri">https://www.luogu.com.cn/record/146467107</a></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>), std::cout.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n + <span class="number">1</span>)</span>, <span class="title">p</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) {</span><br><span class="line">        std::cin &gt;&gt; a[i];</span><br><span class="line">        p[a[i]] = i;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> t = <span class="number">0</span>, f = n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">1</span>; --i) {</span><br><span class="line">        <span class="keyword">if</span> (t == <span class="number">0</span>) {</span><br><span class="line">            <span class="keyword">if</span> (p[i] &lt; p[f]) {</span><br><span class="line">                f = i;</span><br><span class="line">            } <span class="keyword">else</span> {</span><br><span class="line">                ++t;</span><br><span class="line">            }</span><br><span class="line">        } <span class="keyword">else</span> {</span><br><span class="line">            <span class="keyword">if</span> ((p[f] &lt; p[i]) + (p[i] &lt; p[i + <span class="number">1</span>]) + (p[i + <span class="number">1</span>] &lt; p[f]) != <span class="number">2</span>) {</span><br><span class="line">                ++t;</span><br><span class="line">                f = i + <span class="number">1</span>;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; t &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -507,7 +509,10 @@ up/low</p>
     <a href="/README/" rel="prev" title="README">
       <i class="fa fa-chevron-left"></i> README
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/AGC015A/" rel="next" title="AGC015A 题解">
+      AGC015A 题解 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -583,7 +588,7 @@ up/low</p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
