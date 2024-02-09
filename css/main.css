@@ -1264,7 +1264,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d049cd;
+  background: #63ff9e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2655,7 +2655,7 @@ mjx-container + br {
   background-size: cover;
   height: 15px;
   width: 13px;
-  text-alig: center;
+  text-align: center;
 }
 .fa-codeforces {
   background-image: url("/images/codeforces.svg");
@@ -2663,7 +2663,7 @@ mjx-container + br {
   background-size: cover;
   height: 15px;
   width: 13px;
-  text-alig: center;
+  text-align: center;
 }
 .fa-atcoder {
   background-image: url("/images/atcoder.png");
@@ -2671,5 +2671,5 @@ mjx-container + br {
   background-size: cover;
   height: 15px;
   width: 13px;
-  text-alig: center;
+  text-align: center;
 }
