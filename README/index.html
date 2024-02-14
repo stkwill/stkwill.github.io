@@ -14,6 +14,289 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <style type="text/css">
+
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button,details.hcb-content.box.hcbabstract > summary > div.box-open-button,details.hcb-content.box.hcbinfo > summary > div.box-open-button,details.hcb-content.box.hcbtip > summary > div.box-open-button,details.hcb-content.box.hcbsuccess > summary > div.box-open-button,details.hcb-content.box.hcbquestion > summary > div.box-open-button,details.hcb-content.box.hcbwarning > summary > div.box-open-button,details.hcb-content.box.hcbfailure > summary > div.box-open-button,details.hcb-content.box.hcbdanger > summary > div.box-open-button,details.hcb-content.box.hcbbug > summary > div.box-open-button,details.hcb-content.box.hcbexample > summary > div.box-open-button,details.hcb-content.box.hcbquote > summary > div.box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.box-open-button > i,details.hcb-content.box.hcbtip > summary > div.box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.box-open-button > i,details.hcb-content.box.hcbbug > summary > div.box-open-button > i,details.hcb-content.box.hcbexample > summary > div.box-open-button > i,details.hcb-content.box.hcbquote > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -367,11 +650,11 @@ mjx-container[display="true"] + br {
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="8.314ex" height="1.432ex" role="img" focusable="false" viewBox="0 -623 3675 633"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="1D670" d="M191 76Q212 75 220 68T229 38Q229 10 208 1H129H80Q48 1 38 7T28 38Q28 51 29 57T40 69T70 76Q89 76 89 78Q90 79 117 205T173 461T205 599Q212 623 250 623H262H273Q312 623 319 599Q322 591 350 461T406 205T435 78Q435 76 454 76H458Q484 76 493 59Q496 53 496 38Q496 11 478 3Q474 1 395 1H317Q295 8 295 38Q295 65 311 73Q316 75 333 76L348 77V78Q348 80 341 112L334 143H190L183 112Q176 80 176 78Q175 76 178 76Q180 76 191 76ZM318 221Q313 238 288 366T263 519Q263 526 262 527Q261 527 261 520Q261 493 236 365T206 221Q206 219 262 219T318 221Z"></path><path data-c="1D697" d="M89 431Q94 431 105 431T122 432Q173 432 173 399Q173 394 175 394Q176 394 190 404T233 425T298 436Q343 436 371 423Q411 402 423 365T436 265Q436 257 436 239T435 211V198V76H498Q512 67 516 60T520 38Q520 9 498 1H308Q286 9 286 32V38V45Q286 65 303 73Q309 76 329 76H351V188Q351 204 351 230T352 266Q352 321 341 341T288 361Q253 361 222 341T176 274L174 264L173 170V76H236Q250 67 254 60T258 38Q258 9 236 1H27Q4 8 4 38Q4 53 8 60T27 76H89V355H58L27 356Q4 363 4 393Q4 408 8 415T27 431H89Z" transform="translate(525,0)"></path><path data-c="20" d="" transform="translate(1050,0)"></path><path data-c="1D67E" d="M102 588Q140 621 240 621Q323 621 335 620Q393 613 422 588Q450 560 459 493T468 306Q468 185 460 118T422 23Q382 -10 289 -10H262H235Q142 -10 102 23Q74 50 65 118T56 306Q56 427 64 494T102 588ZM363 513Q357 523 347 530T324 540T302 544T280 546H268Q192 546 167 521Q150 501 145 452T140 300Q140 235 142 197T151 130T172 89T207 71T262 65Q317 65 341 81T374 144T384 300Q384 474 363 513Z" transform="translate(1575,0)"></path><path data-c="1D678" d="M400 76Q431 76 441 69T452 38Q452 29 452 26T450 18T443 9T430 1H95Q84 6 79 12T73 23T72 38Q72 65 90 73Q96 76 157 76H220V535H157H124Q93 535 83 542T72 573Q72 603 93 610Q97 611 264 611H430Q432 609 436 607T444 602T449 594Q452 588 452 573Q452 546 434 538Q428 535 367 535H304V76H367H400Z" transform="translate(2100,0)"></path><path data-c="1D68E" d="M48 217Q48 295 100 361T248 439L258 440Q268 440 274 440Q329 438 369 416T428 359T456 292T464 228Q464 215 461 208T454 198T442 190L288 189H135L138 179Q153 132 199 102T303 71Q336 71 353 86T380 120T398 143Q404 146 422 146Q453 146 462 126Q464 120 464 116Q464 84 416 39T285 -6Q187 -6 118 59T48 217ZM377 264Q371 291 365 306T341 338T294 362Q288 363 264 363Q225 363 190 336T139 264H377Z" transform="translate(2625,0)"></path><path data-c="1D69B" d="M327 76Q359 76 369 70T380 38Q380 10 359 1H47Q24 8 24 38Q24 54 28 61T47 76H145V355H96L47 356Q24 363 24 393Q24 409 28 416T47 431H207Q223 419 226 414T229 393V387V369Q297 437 394 437Q436 437 461 417T487 368Q487 347 473 332T438 317Q428 317 420 320T407 327T398 337T393 347T390 356L388 361Q348 356 324 345Q228 299 228 170Q228 161 228 151T229 138V76H293H327Z" transform="translate(3150,0)"></path></g></g></g></svg></mjx-container></span></p>
+        <p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.023ex;" xmlns="http://www.w3.org/2000/svg" width="8.314ex" height="1.432ex" role="img" focusable="false" viewBox="0 -623 3675 633"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="1D670" d="M191 76Q212 75 220 68T229 38Q229 10 208 1H129H80Q48 1 38 7T28 38Q28 51 29 57T40 69T70 76Q89 76 89 78Q90 79 117 205T173 461T205 599Q212 623 250 623H262H273Q312 623 319 599Q322 591 350 461T406 205T435 78Q435 76 454 76H458Q484 76 493 59Q496 53 496 38Q496 11 478 3Q474 1 395 1H317Q295 8 295 38Q295 65 311 73Q316 75 333 76L348 77V78Q348 80 341 112L334 143H190L183 112Q176 80 176 78Q175 76 178 76Q180 76 191 76ZM318 221Q313 238 288 366T263 519Q263 526 262 527Q261 527 261 520Q261 493 236 365T206 221Q206 219 262 219T318 221Z"></path><path data-c="1D697" d="M89 431Q94 431 105 431T122 432Q173 432 173 399Q173 394 175 394Q176 394 190 404T233 425T298 436Q343 436 371 423Q411 402 423 365T436 265Q436 257 436 239T435 211V198V76H498Q512 67 516 60T520 38Q520 9 498 1H308Q286 9 286 32V38V45Q286 65 303 73Q309 76 329 76H351V188Q351 204 351 230T352 266Q352 321 341 341T288 361Q253 361 222 341T176 274L174 264L173 170V76H236Q250 67 254 60T258 38Q258 9 236 1H27Q4 8 4 38Q4 53 8 60T27 76H89V355H58L27 356Q4 363 4 393Q4 408 8 415T27 431H89Z" transform="translate(525,0)"></path><path data-c="20" d="" transform="translate(1050,0)"></path><path data-c="1D67E" d="M102 588Q140 621 240 621Q323 621 335 620Q393 613 422 588Q450 560 459 493T468 306Q468 185 460 118T422 23Q382 -10 289 -10H262H235Q142 -10 102 23Q74 50 65 118T56 306Q56 427 64 494T102 588ZM363 513Q357 523 347 530T324 540T302 544T280 546H268Q192 546 167 521Q150 501 145 452T140 300Q140 235 142 197T151 130T172 89T207 71T262 65Q317 65 341 81T374 144T384 300Q384 474 363 513Z" transform="translate(1575,0)"></path><path data-c="1D678" d="M400 76Q431 76 441 69T452 38Q452 29 452 26T450 18T443 9T430 1H95Q84 6 79 12T73 23T72 38Q72 65 90 73Q96 76 157 76H220V535H157H124Q93 535 83 542T72 573Q72 603 93 610Q97 611 264 611H430Q432 609 436 607T444 602T449 594Q452 588 452 573Q452 546 434 538Q428 535 367 535H304V76H367H400Z" transform="translate(2100,0)"></path><path data-c="1D68E" d="M48 217Q48 295 100 361T248 439L258 440Q268 440 274 440Q329 438 369 416T428 359T456 292T464 228Q464 215 461 208T454 198T442 190L288 189H135L138 179Q153 132 199 102T303 71Q336 71 353 86T380 120T398 143Q404 146 422 146Q453 146 462 126Q464 120 464 116Q464 84 416 39T285 -6Q187 -6 118 59T48 217ZM377 264Q371 291 365 306T341 338T294 362Q288 363 264 363Q225 363 190 336T139 264H377Z" transform="translate(2625,0)"></path><path data-c="1D69B" d="M327 76Q359 76 369 70T380 38Q380 10 359 1H47Q24 8 24 38Q24 54 28 61T47 76H145V355H96L47 356Q24 363 24 393Q24 409 28 416T47 431H207Q223 419 226 414T229 393V387V369Q297 437 394 437Q436 437 461 417T487 368Q487 347 473 332T438 317Q428 317 420 320T407 327T398 337T393 347T390 356L388 361Q348 356 324 345Q228 299 228 170Q228 161 228 151T229 138V76H293H327Z" transform="translate(3150,0)"></path></g></g></g></svg></mjx-container></p>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/profile/stkwill"><img src="https://cfrating.ihcr.top/?user=stkwill" alt="stkwill - Codeforces"></a></p>
 <p><a target="_blank" rel="noopener" href="https://atcoder.jp/users/stkwill"><img src="https://atrating.baoshuo.dev/rating?username=stkwill" alt="stkwill - AtCoder"></a></p>
 <p><a target="_blank" rel="noopener" href="https://codeforces.com/profile/stklight"><img src="https://cfrating.ihcr.top/?user=stklight" alt="stklight - Codeforces"></a></p>
-<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.488ex;" xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></g></g></g></svg></mjx-container></span></p>
+<p><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.488ex;" xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><path data-c="1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></g></g></g></svg></mjx-container></p>
 
     </div>
 
@@ -403,10 +686,7 @@ mjx-container[display="true"] + br {
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/guide-solution/" rel="prev" title="导航 - 题解">
-      <i class="fa fa-chevron-left"></i> 导航 - 题解
-    </a></div>
+      <div class="post-nav-item"></div>
       <div class="post-nav-item">
     <a href="/guide/" rel="next" title="导航">
       导航 <i class="fa fa-chevron-right"></i>
@@ -484,7 +764,7 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -623,63 +903,6 @@ mjx-container[display="true"] + br {
 
 
   
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 

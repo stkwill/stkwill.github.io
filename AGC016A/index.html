@@ -14,18 +14,301 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <style type="text/css">
+
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button,details.hcb-content.box.hcbabstract > summary > div.box-open-button,details.hcb-content.box.hcbinfo > summary > div.box-open-button,details.hcb-content.box.hcbtip > summary > div.box-open-button,details.hcb-content.box.hcbsuccess > summary > div.box-open-button,details.hcb-content.box.hcbquestion > summary > div.box-open-button,details.hcb-content.box.hcbwarning > summary > div.box-open-button,details.hcb-content.box.hcbfailure > summary > div.box-open-button,details.hcb-content.box.hcbdanger > summary > div.box-open-button,details.hcb-content.box.hcbbug > summary > div.box-open-button,details.hcb-content.box.hcbexample > summary > div.box-open-button,details.hcb-content.box.hcbquote > summary > div.box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.box-open-button > i,details.hcb-content.box.hcbtip > summary > div.box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.box-open-button > i,details.hcb-content.box.hcbbug > summary > div.box-open-button > i,details.hcb-content.box.hcbexample > summary > div.box-open-button > i,details.hcb-content.box.hcbquote > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"stkwill.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="导航 - 题解 题面链接： AtCoder 洛谷 Virtual Judge 简要题意 给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。 问使得整个字符串全相同最少的操作次数 思路 枚举最后字符串相同的颜色 那么一步操作相当于所有这种颜色向左扩展一位，将末尾后一个元素视为任意颜色 取最小值即可 时间复杂度：  代码 htt">
+  <meta name="description" content="导航 - 题解 题面链接： AtCoder 洛谷 Virtual Judge 简要题意给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。问使得整个字符串全相同最少的操作次数 思路枚举最后字符串相同的颜色 那么一步操作相当于所有这种颜色向左扩展一位，将末尾后一个元素视为任意颜色 取最小值即可 时间复杂度：  代码https:&#x2F;&#x2F;atcoder.jp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AGC016A 题解">
 <meta property="og:url" content="https://stkwill.github.io/AGC016A/index.html">
 <meta property="og:site_name" content="stkwill&#39;s blog">
-<meta property="og:description" content="导航 - 题解 题面链接： AtCoder 洛谷 Virtual Judge 简要题意 给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。 问使得整个字符串全相同最少的操作次数 思路 枚举最后字符串相同的颜色 那么一步操作相当于所有这种颜色向左扩展一位，将末尾后一个元素视为任意颜色 取最小值即可 时间复杂度：  代码 htt">
+<meta property="og:description" content="导航 - 题解 题面链接： AtCoder 洛谷 Virtual Judge 简要题意给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。问使得整个字符串全相同最少的操作次数 思路枚举最后字符串相同的颜色 那么一步操作相当于所有这种颜色向左扩展一位，将末尾后一个元素视为任意颜色 取最小值即可 时间复杂度：  代码https:&#x2F;&#x2F;atcoder.jp">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-08T08:57:27.000Z">
 <meta property="article:modified_time" content="2024-02-09T04:04:30.592Z">
@@ -382,17 +665,13 @@ mjx-container[display="true"] + br {
       
         <p><a href="/guide-solution/">导航 - 题解</a></p>
 <p><strong>题面链接：</strong> <a target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc016/tasks/agc016_a">AtCoder</a> <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/AT_agc016_a">洛谷</a> <a target="_blank" rel="noopener" href="https://vjudge.net/problem/Atcoder-agc016_a">Virtual Judge</a></p>
-<h2 id="简要题意">简要题意</h2>
-<p>给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。
-问使得整个字符串全相同最少的操作次数</p>
-<h2 id="思路">思路</h2>
-<p>枚举最后字符串相同的颜色</p>
+<h2 id="简要题意"><a href="#简要题意" class="headerlink" title="简要题意"></a>简要题意</h2><p>给出一个字符串，每次操作可以使得字符串缩短一位，新的字符串的第i位可以是原字符串的第i或者第i+1位。<br>问使得整个字符串全相同最少的操作次数</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>枚举最后字符串相同的颜色</p>
 <p>那么一步操作相当于所有这种颜色向左扩展一位，将末尾后一个元素视为任意颜色</p>
 <p>取最小值即可</p>
-<p>时间复杂度： <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="9.329ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4123.4 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1974.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(2974.4,0)"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mo" transform="translate(3734.4,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></span></p>
-<h2 id="代码">代码</h2>
-<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc016/submissions/50096379" class="uri">https://atcoder.jp/contests/agc016/submissions/50096379</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/146546998" class="uri">https://www.luogu.com.cn/record/146546998</a></p>
+<p>时间复杂度： <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="9.329ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 4123.4 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path></g><g data-mml-node="mo" transform="translate(763,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1152,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1974.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mi" transform="translate(2974.4,0)"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path></g><g data-mml-node="mo" transform="translate(3734.4,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc016/submissions/50096379">https://atcoder.jp/contests/agc016/submissions/50096379</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/146546998">https://www.luogu.com.cn/record/146546998</a></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">    std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>), std::cout.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    std::string s;</span><br><span class="line">    std::cin &gt;&gt; s;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constexpr</span> <span class="type">char</span> CHAR_BEG = <span class="string">'a'</span>;</span><br><span class="line">    <span class="keyword">constexpr</span> <span class="type">int</span> C = <span class="number">26</span>;</span><br><span class="line"></span><br><span class="line">    std::array&lt;std::vector&lt;<span class="type">int</span>&gt;, C&gt; a;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); ++i) {</span><br><span class="line">        a[s[i] -= CHAR_BEG].<span class="built_in">push_back</span>(i);</span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    <span class="type">int</span> ans = s.<span class="built_in">size</span>();</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; C; ++i) {</span><br><span class="line">        a[i].<span class="built_in">push_back</span>(s.<span class="built_in">size</span>());</span><br><span class="line">        <span class="type">int</span> t = <span class="number">-1</span>, max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> x : a[i]) {</span><br><span class="line">            max = std::<span class="built_in">max</span>(max, x - t - <span class="number">1</span>);</span><br><span class="line">            t = x;</span><br><span class="line">        }</span><br><span class="line">        ans = std::<span class="built_in">min</span>(ans, max);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; ans &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
     </div>
@@ -511,7 +790,7 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -650,63 +929,6 @@ mjx-container[display="true"] + br {
 
 
   
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 

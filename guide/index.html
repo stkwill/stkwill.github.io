@@ -14,6 +14,289 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <style type="text/css">
+
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.block.hcbnote > p.hcb-content.block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.block.hcbabstract > p.hcb-content.block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.block.hcbinfo > p.hcb-content.block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.block.hcbtip > p.hcb-content.block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.block.hcbsuccess > p.hcb-content.block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.block.hcbquestion > p.hcb-content.block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.block.hcbwarning > p.hcb-content.block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.block.hcbfailure > p.hcb-content.block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.block.hcbdanger > p.hcb-content.block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.block.hcbbug > p.hcb-content.block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.block.hcbexample > p.hcb-content.block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.block.hcbquote > p.hcb-content.block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button,details.hcb-content.box.hcbabstract > summary > div.box-open-button,details.hcb-content.box.hcbinfo > summary > div.box-open-button,details.hcb-content.box.hcbtip > summary > div.box-open-button,details.hcb-content.box.hcbsuccess > summary > div.box-open-button,details.hcb-content.box.hcbquestion > summary > div.box-open-button,details.hcb-content.box.hcbwarning > summary > div.box-open-button,details.hcb-content.box.hcbfailure > summary > div.box-open-button,details.hcb-content.box.hcbdanger > summary > div.box-open-button,details.hcb-content.box.hcbbug > summary > div.box-open-button,details.hcb-content.box.hcbexample > summary > div.box-open-button,details.hcb-content.box.hcbquote > summary > div.box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.box-open-button > i,details.hcb-content.box.hcbtip > summary > div.box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.box-open-button > i,details.hcb-content.box.hcbbug > summary > div.box-open-button > i,details.hcb-content.box.hcbexample > summary > div.box-open-button > i,details.hcb-content.box.hcbquote > summary > div.box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -402,8 +685,8 @@ mjx-container[display="true"] + br {
       <i class="fa fa-chevron-left"></i> README
     </a></div>
       <div class="post-nav-item">
-    <a href="/AGC014F/" rel="next" title="AGC014F 题解">
-      AGC014F 题解 <i class="fa fa-chevron-right"></i>
+    <a href="/guide-solution/" rel="next" title="导航 - 题解">
+      导航 - 题解 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -478,7 +761,7 @@ mjx-container[display="true"] + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -617,63 +900,6 @@ mjx-container[display="true"] + br {
 
 
   
-
-  
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-          load: ['[tex]/mhchem'],
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-          packages: {'[+]': ['mhchem']},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
