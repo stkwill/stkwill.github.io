@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <style type="text/css">
+
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote,div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract,div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo,div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip,div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess,div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion,div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning,div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure,div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger,div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug,div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample,div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border: .05rem solid #448aff;
+  border-radius: .2rem;
+  font-size: 0.96rem;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  transition: box-shadow 250ms;
+}
+div.hcb-content.hcb-block.hcbnote, details.hcb-content.box.hcbnote {
+  border-color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract, details.hcb-content.box.hcbabstract {
+  border-color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo, details.hcb-content.box.hcbinfo {
+  border-color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip, details.hcb-content.box.hcbtip {
+  border-color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess, details.hcb-content.box.hcbsuccess {
+  border-color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion, details.hcb-content.box.hcbquestion {
+  border-color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning, details.hcb-content.box.hcbwarning {
+  border-color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure, details.hcb-content.box.hcbfailure {
+  border-color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger, details.hcb-content.box.hcbdanger {
+  border-color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug, details.hcb-content.box.hcbbug {
+  border-color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample, details.hcb-content.box.hcbexample {
+  border-color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote, details.hcb-content.box.hcbquote {
+  border-color: #9e9e9e;
+}
+div.hcb-content.hcb-block.hcbnote:focus-within, details.hcb-content.box.hcbnote:focus-within {
+  box-shadow: 0 0 0 .2rem #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract:focus-within, details.hcb-content.box.hcbabstract:focus-within {
+  box-shadow: 0 0 0 .2rem #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo:focus-within, details.hcb-content.box.hcbinfo:focus-within {
+  box-shadow: 0 0 0 .2rem #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip:focus-within, details.hcb-content.box.hcbtip:focus-within {
+  box-shadow: 0 0 0 .2rem #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess:focus-within, details.hcb-content.box.hcbsuccess:focus-within {
+  box-shadow: 0 0 0 .2rem #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion:focus-within, details.hcb-content.box.hcbquestion:focus-within {
+  box-shadow: 0 0 0 .2rem #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning:focus-within, details.hcb-content.box.hcbwarning:focus-within {
+  box-shadow: 0 0 0 .2rem #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure:focus-within, details.hcb-content.box.hcbfailure:focus-within {
+  box-shadow: 0 0 0 .2rem #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger:focus-within, details.hcb-content.box.hcbdanger:focus-within {
+  box-shadow: 0 0 0 .2rem #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug:focus-within, details.hcb-content.box.hcbbug:focus-within {
+  box-shadow: 0 0 0 .2rem #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample:focus-within, details.hcb-content.box.hcbexample:focus-within {
+  box-shadow: 0 0 0 .2rem #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote:focus-within, details.hcb-content.box.hcbquote:focus-within {
+  box-shadow: 0 0 0 .2rem #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote *, details.hcb-content.box.hcbnote *,div.hcb-content.hcb-block.hcbabstract *, details.hcb-content.box.hcbabstract *,div.hcb-content.hcb-block.hcbinfo *, details.hcb-content.box.hcbinfo *,div.hcb-content.hcb-block.hcbtip *, details.hcb-content.box.hcbtip *,div.hcb-content.hcb-block.hcbsuccess *, details.hcb-content.box.hcbsuccess *,div.hcb-content.hcb-block.hcbquestion *, details.hcb-content.box.hcbquestion *,div.hcb-content.hcb-block.hcbwarning *, details.hcb-content.box.hcbwarning *,div.hcb-content.hcb-block.hcbfailure *, details.hcb-content.box.hcbfailure *,div.hcb-content.hcb-block.hcbdanger *, details.hcb-content.box.hcbdanger *,div.hcb-content.hcb-block.hcbbug *, details.hcb-content.box.hcbbug *,div.hcb-content.hcb-block.hcbexample *, details.hcb-content.box.hcbexample *,div.hcb-content.hcb-block.hcbquote *, details.hcb-content.box.hcbquote * {
+  box-sizing: border-box;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary,div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary,div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary,div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary,div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary,div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary,div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary,div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary,div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary,div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary,div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary,div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  border-left-width: 0.2rem;
+  display: block;
+  min-height: 1rem;
+  border: none;
+  font-weight: 700;
+  margin: 0 -1.2rem 1rem;
+  padding: 0.4rem 0.6rem;
+  position: relative;
+  outline: none;
+}
+details.hcb-content.box.hcbnote > summary,details.hcb-content.box.hcbabstract > summary,details.hcb-content.box.hcbinfo > summary,details.hcb-content.box.hcbtip > summary,details.hcb-content.box.hcbsuccess > summary,details.hcb-content.box.hcbquestion > summary,details.hcb-content.box.hcbwarning > summary,details.hcb-content.box.hcbfailure > summary,details.hcb-content.box.hcbdanger > summary,details.hcb-content.box.hcbbug > summary,details.hcb-content.box.hcbexample > summary,details.hcb-content.box.hcbquote > summary {
+  cursor: pointer;
+}
+details.hcb-content.box.hcbnote:not([open]) > summary,details.hcb-content.box.hcbabstract:not([open]) > summary,details.hcb-content.box.hcbinfo:not([open]) > summary,details.hcb-content.box.hcbtip:not([open]) > summary,details.hcb-content.box.hcbsuccess:not([open]) > summary,details.hcb-content.box.hcbquestion:not([open]) > summary,details.hcb-content.box.hcbwarning:not([open]) > summary,details.hcb-content.box.hcbfailure:not([open]) > summary,details.hcb-content.box.hcbdanger:not([open]) > summary,details.hcb-content.box.hcbbug:not([open]) > summary,details.hcb-content.box.hcbexample:not([open]) > summary,details.hcb-content.box.hcbquote:not([open]) > summary {
+  margin-bottom: 0;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbnote > summary {
+  background-color: #448aff1a;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbabstract > summary {
+  background-color: #00b0ff1a;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbinfo > summary {
+  background-color: #00b8d41a;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbtip > summary {
+  background-color: #00bfa51a;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbsuccess > summary {
+  background-color: #00c8531a;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquestion > summary {
+  background-color: #64dd171a;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbwarning > summary {
+  background-color: #ff91001a;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbfailure > summary {
+  background-color: #ff52521a;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbdanger > summary {
+  background-color: #ff17441a;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbbug > summary {
+  background-color: #f500571a;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbexample > summary {
+  background-color: #7c4dff1a;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title, details.hcb-content.box.hcbquote > summary {
+  background-color: #9e9e9e1a;
+}
+div.hcb-content.hcb-block.hcbnote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbnote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #448aff;
+}
+div.hcb-content.hcb-block.hcbabstract > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbabstract > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b0ff;
+}
+div.hcb-content.hcb-block.hcbinfo > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbinfo > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00b8d4;
+}
+div.hcb-content.hcb-block.hcbtip > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbtip > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00bfa5;
+}
+div.hcb-content.hcb-block.hcbsuccess > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbsuccess > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #00c853;
+}
+div.hcb-content.hcb-block.hcbquestion > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquestion > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #64dd17;
+}
+div.hcb-content.hcb-block.hcbwarning > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbwarning > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff9100;
+}
+div.hcb-content.hcb-block.hcbfailure > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbfailure > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff5252;
+}
+div.hcb-content.hcb-block.hcbdanger > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbdanger > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #ff1744;
+}
+div.hcb-content.hcb-block.hcbbug > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbbug > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #f50057;
+}
+div.hcb-content.hcb-block.hcbexample > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbexample > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #7c4dff;
+}
+div.hcb-content.hcb-block.hcbquote > p.hcb-content.hcb-block-title > i, details.hcb-content.box.hcbquote > summary > i {
+  margin: 0 0.6rem 0 0.6rem;
+  color: #9e9e9e;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button {
+  float: right;
+}
+details.hcb-content.box.hcbnote > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbabstract > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbinfo > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbtip > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbsuccess > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquestion > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbwarning > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbfailure > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbdanger > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbbug > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbexample > summary > div.hcb-box-open-button > i,details.hcb-content.box.hcbquote > summary > div.hcb-box-open-button > i {
+  margin: 0 0.6rem 0 0.6rem;
+  font-size: 0.7rem;
+  transition: transform 250ms
+}
+details.hcb-content.box.hcbnote:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample:not([open]) > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote:not([open]) > summary > div.hcb-box-open-button i {
+  transform: rotate(270deg);
+}
+details.hcb-content.box.hcbnote[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbabstract[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbinfo[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbtip[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbsuccess[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquestion[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbwarning[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbfailure[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbdanger[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbbug[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbexample[open] > summary > div.hcb-box-open-button i,details.hcb-content.box.hcbquote[open] > summary > div.hcb-box-open-button i {
+  transform: rotate(180deg);
+}
+details.hcb-content.box.hcbnote summary div.hcb-box-open-button i {
+  color: #448aff;
+}
+details.hcb-content.box.hcbabstract summary div.hcb-box-open-button i {
+  color: #00b0ff;
+}
+details.hcb-content.box.hcbinfo summary div.hcb-box-open-button i {
+  color: #00b8d4;
+}
+details.hcb-content.box.hcbtip summary div.hcb-box-open-button i {
+  color: #00bfa5;
+}
+details.hcb-content.box.hcbsuccess summary div.hcb-box-open-button i {
+  color: #00c853;
+}
+details.hcb-content.box.hcbquestion summary div.hcb-box-open-button i {
+  color: #64dd17;
+}
+details.hcb-content.box.hcbwarning summary div.hcb-box-open-button i {
+  color: #ff9100;
+}
+details.hcb-content.box.hcbfailure summary div.hcb-box-open-button i {
+  color: #ff5252;
+}
+details.hcb-content.box.hcbdanger summary div.hcb-box-open-button i {
+  color: #ff1744;
+}
+details.hcb-content.box.hcbbug summary div.hcb-box-open-button i {
+  color: #f50057;
+}
+details.hcb-content.box.hcbexample summary div.hcb-box-open-button i {
+  color: #7c4dff;
+}
+details.hcb-content.box.hcbquote summary div.hcb-box-open-button i {
+  color: #9e9e9e;
+}
+div.hcb-content.hcb-cards * {
+  box-sizing: border-box;
+}
+input.hcb-content.hcb-cards-input {
+  display: none;
+}
+div.hcb-content.hcb-cards-labels {
+  position: relative;
+  box-shadow: 0 -0.05rem #00000012 inset;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+div.hcb-content.hcb-cards-labels:before {
+  background: var(--cards-color);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: translateX(var(--md-indicator-x));
+  transition: width 225ms, transform 250ms;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  width: var(--md-indicator-width);
+}
+label.hcb-content.hcb-cards-label {
+  border-bottom: 0.1rem solid #0000;
+  border-radius: 0.1rem 0.1rem 0 0;
+  cursor: pointer;
+  color: #0000008a;
+  font-size: 0.92em;
+  font-weight: 700;
+  padding: 0 1.25rem 0.625rem;
+  transition: color 250ms;
+}
+label.hcb-content.hcb-cards-label.active, label.hcb-content.hcb-cards-label:hover {
+  color: var(--cards-color);
+}
+div.hcb-content.hcb-cards-content {
+  display: none;
+}
+div.hcb-content.hcb-cards-content.active {
+  display: block;
+}
+</style>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stkwill.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="stkwill&#39;s blog">
+<meta property="og:url" content="https://stkwill.github.io/categories/solution/page/4/index.html">
+<meta property="og:site_name" content="stkwill&#39;s blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stkwill">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stkwill.github.io/categories/solution/page/4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>分类: solution | stkwill's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <!---
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.js"></script>
+  --->
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stkwill's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">an OIer</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-guide">
+
+    <a href="/guide/" rel="section"><i class="fa fa-location-arrow fa-fw"></i>导航</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/README/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/stkwill" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content category">
+            
+
+  
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">solution
+          <small>分类</small>
+        </h2>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2024</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2024-02-07T17:29:21+08:00"
+              content="2024-02-07">
+          02-07
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/AGC014F/" itemprop="url">
+            <span itemprop="name">AGC014F 题解</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/categories/solution/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/categories/solution/">1</a><span class="space">&hellip;</span><a class="page-number" href="/categories/solution/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stkwill"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">stkwill</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/stkwill" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;stkwill" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://codeforeces.com/profile/stkwill" title="Codeforeces → https:&#x2F;&#x2F;codeforeces.com&#x2F;profile&#x2F;stkwill" rel="noopener" target="_blank"><i class="fab fa-codeforces fa-fw"></i>Codeforeces</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://atcoder.jp/users/stkwill" title="AtCoder → https:&#x2F;&#x2F;atcoder.jp&#x2F;users&#x2F;stkwill" rel="noopener" target="_blank"><i class="fab fa-atcoder fa-fw"></i>AtCoder</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.luogu.com.cn/user/935092" title="Luogu → https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;user&#x2F;935092" rel="noopener" target="_blank"><i class="fab fa-luogu fa-fw"></i>Luogu</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stkwill</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
